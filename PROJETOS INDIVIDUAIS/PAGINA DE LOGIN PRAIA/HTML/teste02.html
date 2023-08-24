@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style2.css">
+    <link rel="shortcut icon" href="../IMG/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pai">
+        <form id="log">
+            <div class="pri">
+                <h1>ENTRE</h1>
+                <div class="usu">
+                    <img class="e" src="../img/email.png" alt="ico" id="imag">
+                    <input type="email" placeholder="E-mail" class="campos" id="email" name="em" oninput="validaremail()">
+                    <span class="sp" id="sp">Digite um e-mail válido</span>
+                </div>
+                <div class="sen">
+                    <img class="s" src="../img/cadeadobranco.png" alt="ico">
+                    <input  type="password" placeholder="Senha" id="senha" class="campos" name="se" oninput="validarsenha()">
+                    <span class="sp" id="sp">Digite uma senha com no minímo 08 caracteres</span >
+                </div>
+                <div class="but">
+                    <button type="submit" onclick="validarlog()" >Entrar</button><br><br>
+                </div>
+                <div class="cada">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
+                </div>
+                <div class="esque">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Esqueci minha senha</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+    <script>
+    
+function validarlog(){
+    let em = document.getElementById("email").value;
+    let ps = document.getElementById("senha").value;
+    //aplicar todas as validações para o nome
+    if (em.trim() === "") {
+      alert('Campo de email obrigatório');
+      document.getElementById("email").focus();
+      return;
+    }
+    if (ps.trim() === '') {
+        alert('Campo de senha obrigatório')
+        document.getElementById("senha").focus();
+        return;
+    }
+}
+
+
+
+const campos = document.querySelectorAll('.campos')
+const sp = document.querySelectorAll('.sp')
+const log = document.getElementById('log')
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+function seterror(index){
+    campos[index].style.border = '2px solid red';
+    sp[index].style.display = 'block'
+}
+
+function remoerror(index){
+    campos[index].style.border = ''
+    sp[index].style.display = 'none'
+}
+
+function validaremail(){
+    if(!emailRegex.test(campos[0].value))
+    {
+        seterror(0)
+    }
+    else
+    {
+        remoerror(0);
+    }
+}
+
+function validarsenha(){
+    if(campos[1].value.length < 8){
+        seterror(1)
+    }
+    else
+    {
+        remoerror(1)
+    }
+}
+    </script>
+</html>

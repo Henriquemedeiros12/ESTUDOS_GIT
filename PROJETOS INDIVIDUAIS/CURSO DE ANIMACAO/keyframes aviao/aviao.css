@@ -1,0 +1,36 @@
+  *{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(./img/ceu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: hidden;
+  
+}
+
+img{
+    animation: voar 3s infinite;
+    height: 200px;
+    width: 150px;
+    top: 190px;
+    left: 20px;
+    position: relative;
+}
+
+@keyframes voar {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(350%, -100px);
+    }
+ 
+
+    100% {
+        transform: translate(calc(100vw - 200px), 0);
+    }
+}

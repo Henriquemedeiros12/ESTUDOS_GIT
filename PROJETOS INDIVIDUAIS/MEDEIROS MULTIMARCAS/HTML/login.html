@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../HTML/paginainicial.html" class="logo">MEDEIROS MULTIMARCAS</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../HTML/login.html">ENTRE</a></li>
+                <li><a href="../HTML/contatos.html">CONTATO</a></li>
+                <li><a href="../HTML/quemsomos.html">QUEM SOMOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="pai">
+        <div class="filho">
+            <div class="login">
+                <h1>LOGIN</h1>
+                <img class="e" src="../images/email.png" alt="ico" id="imag">
+                <input type="text" id="email" class="campos" placeholder="Login" oninput="validaremail()">
+                <span class="sp" id="sp">Digite um e-mail válido</span>
+            </div>
+            <div class="senha">
+                <img class="s" src="../images/cadeadobranco.png" alt="ico">
+                <input type="password" id="senha" class="campos" placeholder="Password" maxlength="8" oninput="validarsenha()">
+                <span class="sp" id="sp">Digite uma senha com no minímo 08 caracteres</span >
+            </div>
+            <div class="but">
+                <button class="but" onclick="validarlog()">ENTRE</button>
+            </div>
+            <div class="cada">
+                <a href="#" target="_blank" rel="noopener noreferrer">CADASTRE-SE</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function validarlog(){
+    let em = document.getElementById("email").value;
+    let ps = document.getElementById("senha").value;
+    //aplicar todas as validações para o nome
+    if (em.trim() === "") {
+      alert('Campo de email obrigatório');
+      document.getElementById("email").focus();
+      return;
+    }
+    if (ps.trim() === '') {
+        alert('Campo de senha obrigatório')
+        document.getElementById("senha").focus();
+        return;
+    }
+}
+
+
+
+const campos = document.querySelectorAll('.campos')
+const sp = document.querySelectorAll('.sp')
+const log = document.getElementById('log')
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+function seterror(index){
+    campos[index].style.border = '2px solid red';
+    sp[index].style.display = 'block'
+}
+
+function remoerror(index){
+    campos[index].style.border = ''
+    sp[index].style.display = 'none'
+}
+
+function validaremail(){
+    if(!emailRegex.test(campos[0].value))
+    {
+        seterror(0)
+    }
+    else
+    {
+        remoerror(0);
+    }
+}
+
+function validarsenha(){
+    if(campos[1].value.length < 8){
+        seterror(1)
+    }
+    else
+    {
+        remoerror(1)
+    }
+}
+</script>
+</html>

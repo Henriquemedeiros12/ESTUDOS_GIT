@@ -1,0 +1,67 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: azure;
+}
+
+header {
+    background-color: white;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+i#burguer {
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    border-top: 2px solid black;
+}
+
+menu > ul > li > a:hover {
+    background-color: rgba(0, 255, 255, 0.484);
+}
+
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+}

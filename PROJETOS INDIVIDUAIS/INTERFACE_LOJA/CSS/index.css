@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'lex';
+    src: url(../FONTS/LexendExa-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'saira';
+    src: url(../FONTS/Saira-Regular.ttf);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 15vh;
+    width: 100vw;
+}
+
+img {
+    align-items: start;
+    height: 170px;
+    width: 200px;
+}
+
+.titu {
+    font-family: "lex";
+    font-size: 20pt;
+    margin: 0px 0px 0px 620px;
+    color: #000;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5 );
+}
+
+.pai {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    height: 8vh;
+    width: 100vw;
+}
+
+.cx_ab {
+    font-family: 'saira';
+    font-size: 35pt;
+}
+
+.nota_fiscal {
+    display: flex;
+    height: 63vh;
+    width: 99vw;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    margin: 10px 10px 0px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+}
+
+.nota_fisca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 63vh;
+    width: 36vw;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.list_produtos {
+    display: flex;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 7px;
+    background-color: #000;
+    height: 6vh;
+    width: 35vw;
+    border-radius: 10px;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 5px 0px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+#cab_table {
+    margin-top: 0px;
+    color: #000;
+    font-weight: 800;
+}
+
+.cab_tabl {
+    margin-top: 5px;
+    color: #000;
+    font-weight: 800;
+    position: absolute;
+    z-index: 100;
+}
+
+th {
+    color: #000;
+    font-weight: 100;
+}
+
+.pe_paragrafo_total {
+    padding: 5px 5px;
+}
+
+.inp_total_nota {
+    color: #fff;
+    border: none;
+    font-family: 'saira';
+    background-color: #000;
+    font-size: 12pt;
+    margin: 0px 11px 0px 140px;
+    padding: 0px 0px;
+    text-align: end;
+    width: 13vw;
+    height: 4vh;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.list {
+    margin-top: 5px;
+    height: 5vh;
+    width: 35vw;
+    color: #fff;
+    text-align: center;
+    font-family: 'saira';
+    font-size: 13pt;
+}
+
+.legendas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin: 10px 10px 0px 5px;
+    height: 10vh;
+    width: 99vw;
+    color: #000;
+    text-align: center;
+    font-family: 'saira';
+    font-size: 13pt;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    line-height: 25px;
+}
+
+.legenda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-end;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 0px;
+    padding: 3px 0px 0px 6px;
+    height: 10vh;
+    width: 35vw;
+    color: #000;
+    text-align: justify;
+    font-family: 'saira';
+    font-size: 13pt;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    gap: 5px;
+}
+
+.codigos {
+    color: #000;
+    height: 63vh;
+    width: 63vw;
+    margin: 0px 0px 0px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 150px;
+}
+
+.cod_cima {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+}
+
+.cod_baix {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+}
+
+label {
+    font-family: 'saira';
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 600;
+    color: #000;
+    padding: 0px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
+}
+
+.interface_cod {
+    font-family: 'saira';
+    text-align: end;
+    font-size: 22pt;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    border: none;
+    color: #000;
+    padding: 0px 0px 0px 0px;
+    margin: 5px 0px 5px 0px;
+    height: 8vh;
+    width: 20vw;
+}
+
+.total {
+    height: 10vh;
+    width: 62vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5 );
+    background-color: #000;
+    color: #fff;
+    margin: 0px 0px 0px 18px;
+}
+
+.txt_tot {
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.txt_nu {
+    width: 150px;
+    height: 57px;
+    color: black;
+    margin: 0px 0px 0px 430px;
+    font-size: 25pt;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    text-align: end;
+    font-family: 'saira';
+}
+
+.p_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: purple;
+
+}
+
+.p_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: darkgrey;
+
+}
+
+.p_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: seagreen;
+
+}
+
+.p_4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: violet;
+
+}
+
+.p_5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: aqua;
+
+}
+
+.p_6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: blue;
+
+}
+
+.p_7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0px 4px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: #000;
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: yellowgreen;
+
+}
+
+.cod {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.desc {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.qnt {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.v_u {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.v_t {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.cod_2 {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.desc_2 {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.qnt_2 {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.v_u_2 {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+.v_t_2 {
+    text-align: center;
+    height: 20vh;
+    width: 35vw;
+}
+
+
+
+

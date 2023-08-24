@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/card.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="card.js" defer></script>
+    <title>Cartao</title>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">
+            <div id="filho2">
+
+                <div class="band_card" id="band_card">    
+                    <img id="cardImage" class="header_band" src="" alt="Bandeira do Cartão">
+                </div>
+
+                <div class="chip_card" id="chip_card">
+                    <img class="header_chip" src="../images/chip-de-cartao-de-credito.png" alt="chip">
+                    <img class="header_nfc" src="../images/sem-contato.png" alt="NFC">
+                </div>
+
+
+                <div class="number_card" id="number_card">
+                    <input disabled class="card_number" id="numericInput"  type="text" maxlength="19" placeholder="####-####-####-####" oninput="formatNumber(event)" onkeypress="return isNumberKey(event)">
+                </div>
+
+                <div class="name_card" id="name_card">
+                    <input disabled class="name_cliente" id="numericInput2" type="text" placeholder="FULL NAME" oninput="handleInput()">
+                </div>
+
+                <div class="vencimento" id="vencimento">
+                    <input disabled class="date_vencimento" id="numericInput3" readonly type="text" placeholder="MM/YY" onkeypress="return isNumberKey(event)">
+                </div>
+               
+            </div>
+
+            <div id="filho3" class="filho3">
+
+                <div class="tarja"></div>
+
+                <div class="tarja_cvv">
+                    <input type="text" class="cvv" id="cvv" maxlength="3" onkeypress="return isNumberKey(event)">
+                </div>
+
+                <div class="pe_card" id="pe_card">
+                    <img id="cardImage2" class="header_band2" src="" alt="Bandeira do Cartão">
+                    <img class="pe_selo" src="../images/MUNDI.png" alt="pe_selo">
+                </div>
+            
+            </div>
+
+            <form action="">
+                <hr>
+                <div class="numero">
+                    <label class="label1" for="Card_Number">Card Number</label>
+                    <br>
+                    <input id="inputform1" class="inputform1" type="text" placeholder="CARD NUMBER" maxlength="19"  onkeyup="verificarNumero()" onkeypress="return isNumberKey(event)" oninput="handleInput()">
+                </div>
+
+                <div class="name">
+                    <label class="label2" for="Cardholder_Name">Cardholder Name</label>
+                    <br>
+                    <input id="inputform2" class="inputform2" type="text" onkeydown="handleInput()">
+                </div>
+
+                    <div class="scv">
+                        <label class="label3" for="Expiration_Date">Expiration Date</label>
+                        <label class="label4" for="cvv">CVV</label>
+                    </div>
+                    
+                <div class="dta_cvv">
+                    <select class="mes_venc" name="mes_venc" id="mes_venc" onchange="atualizarInput()">
+                        <option value="MONTH">MONTH</option>
+                        <option value="01">JANUARY</option>
+                        <option value="02">FEBRUARY</option>
+                        <option value="03">MARCH</option>
+                        <option value="04">APRIL</option>
+                        <option value="05">MAY</option>
+                        <option value="06">JUNE</option>
+                        <option value="07">JULY</option>
+                        <option value="08">AUGUST</option>
+                        <option value="09">SEPTEMBER</option>
+                        <option value="10">OCTOBER</option>
+                        <option value="11">NOVEMBER</option>
+                        <option value="12">DECEMBER</option>
+                    </select>
+
+                    <select class="ano_venc" name="ano_venc" id="ano_venc" onchange="atualizarInput()">
+                    </select>
+
+                    <input id="inputform3" class="inputform3" type="text" placeholder="CVV" maxlength="3" onkeypress="return isNumberKey(event)">
+
+                </div>
+
+                <div class="btn">
+                    <button class="butom" id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'teko';
+    src: url(../FONTS/Teko-Medium.ttf);
+}    
+@font-face {
+    font-family: 'kua';
+    src: url(../FONTS/Quartz.ttf);
+}  
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'kua';
+}
+
+body{
+    height: 100vh;
+    background-image: url(../IMG/wallpaperbetter.com_3840x2160.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*SERVE PRA DA ESPACAMENTO ENTRE AS DIVS*/
+    height: 200px;
+    width: 500px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /*SERVE PRA COLOCAR OS TEXTOS UM EM CIMA DO OUTRO NAS DIVS*/
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #494527;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px; /* ESPACAMENTO DAS LETRAS */
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+}
+

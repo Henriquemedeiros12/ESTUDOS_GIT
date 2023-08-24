@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'os';
+    src: url(..//FONTS/Oswald-SemiBold.ttf);
+}
+@font-face{
+    font-family: 'ar';
+    src: url(../FONTS/Audiowide-Regular.ttf);
+}
+
+body{
+    background-color: #FFE53B;
+    background-image: linear-gradient(to right, #FFE53B 0%, #FF2525 74%);
+}
+
+h1.tit{
+    color: white;
+    font-family: 'ar';
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    margin-top: 220px;
+    font-size: 40pt;
+}
+
+div.cote{
+text-align: center;
+font-family: 'os';
+color: black;
+text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.288);
+margin-top: 5px
+}
+
+button#but{
+    background-color: #FFE53B;
+    background-image: linear-gradient(to left, #FFE53B 0%, #FF2525 74%);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+div.res{
+    margin-top: 10px;
+}

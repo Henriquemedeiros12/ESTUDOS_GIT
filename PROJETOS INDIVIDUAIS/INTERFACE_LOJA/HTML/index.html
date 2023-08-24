@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="../JS/index.js" defer></script>
+    <link rel="shortcut icon" href="../IMG/favicon.ico" type="image/x-icon">
+    <title>Caixa</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../IMG/mm transp.png" alt="LOGO_LOJA">
+        <h1 class="titu">MEDEIROS MULTIMARCAS</h1>
+    </div>
+    <div class="pai">
+            <h2 class="cx_ab">CAIXA ABERTO</h2>
+    </div>
+    <div class="nota_fiscal">
+        <div class="nota_fisca">
+
+            <div class="list_produtos">
+                <h6 class="list">LISTA DOS PRODUTOS</h6>
+            </div>
+
+            <div class="tabela">
+                <table>
+                    <div class="cab_tabl">
+                            <th id="cab_table" class="cab_table_co">COD</th>
+                            <th id="cab_table" class="cab_table_de">DESCRRIÇÃO</th>
+                            <th id="cab_table" class="cab_table_qu">QNT</th>
+                            <th id="cab_table" class="cab_table_vun">VAL.UNI</th>
+                            <th id="cab_table" class="cab_table_vto">VAL.TOT</th>
+                    </div>
+                </table>
+                            <div id="p_1" class="p_1">
+                                <p id="cod" class="cod"></p>
+                                <p id="desc" class="desc"></p>
+                                <p id="qnt" class="qnt"></p>
+                                <p id="v_u" class="v_u"></p>
+                                <p id="v_t" class="v_t"></p>
+                            </div>
+
+                            <div id="p_2" class="p_2">
+                                <p id="cod_2" class="cod_2"></p>
+                                <p id="desc_2" class="desc_2"></p>
+                                <p id="qnt_2" class="qnt_2"></p>
+                                <p id="v_u_2" class="v_u_2"></p>
+                                <p id="v_t_2" class="v_t_2"></p>
+                            </div>
+
+                            <div id="p_3" class="p_3">
+                                <p id="cod_3" class="cod_3"></p>
+                                <p id="desc_3" class="desc_3"></p>
+                                <p id="qnt_3" class="qnt_3"></p>
+                                <p id="v_u_3" class="v_u_3"></p>
+                                <p id="v_t_3" class="v_t_3"></p>
+                            </div>
+
+                            <div id="p_4" class="p_4">
+                                <p id="cod_4" class="cod_4"></p>
+                                <p id="desc_4" class="desc_4"></p>
+                                <p id="qnt_4" class="qnt_4"></p>
+                                <p id="v_u_4" class="v_u_4"></p>
+                                <p id="v_t_4" class="v_t_4"></p>
+                            </div>
+
+                            <div id="p_5" class="p_5">
+                                <p id="cod_5" class="cod_5"></p>
+                                <p id="desc_5" class="desc_5"></p>
+                                <p id="qnt_5" class="qnt_5"></p>
+                                <p id="v_u_5" class="v_u_5"></p>
+                                <p id="v_t_5" class="v_t_5"></p>
+                            </div>
+
+                            <div id="p_6" class="p_6">
+                                <p id="cod_6" class="cod_6"></p>
+                                <p id="desc_6" class="desc_6"></p>
+                                <p id="qnt_6" class="qnt_6"></p>
+                                <p id="v_u_6" class="v_u_6"></p>
+                                <p id="v_t_6" class="v_t_6"></p>
+                            </div>
+
+                            <div id="p_7" class="p_7">
+                                <p id="cod_7" class="cod_7"></p>
+                                <p id="desc_7" class="desc_7"></p>
+                                <p id="qnt_7" class="qnt_7"></p>
+                                <p id="v_u_7" class="v_u_7"></p>
+                                <p id="v_t_7" class="v_t_7"></p>
+                            </div>
+            </div>
+        </div>
+
+        <div class="codigos">
+
+            <div class="cod_cima">
+                <label for="CODIGO DO PRODUTO">COD. DO PRODUTO</label>
+                <input id="codigoDoProduto" class="interface_cod" type="text" maxlength="03" oninput="this.value = this.value.replace(/\D/g, '');">
+
+                <label for="QUANTIDADE">QUANTIDADE</label>
+                <input id="quantidade" class="interface_cod" type="text" maxlength="03" oninput="this.value = this.value.replace(/\D/g, '');">
+            </div>
+
+            <div class="cod_baix">
+                <label for="VALOR UNITÁRIO">VALOR UNITÁRIO</label>
+                <input id="valorunitario" class="interface_cod" type="text" disabled>
+
+                <label for="VALOR TOTAL">SUBTOTAL</label>
+                <input id="valortotal" class="interface_cod" type="text" disabled>
+            </div>
+
+        </div>
+    </div>
+    <div class="legendas">
+        <div class="legenda">
+            <p><b>F1 - Iniciar venda</b></p>
+            <p><b>F2 - Nova venda</b></p>
+            <p><b>F3 - Excluir item</b></p>
+            <p><b>F4 - Alterar item</b></p>
+            <p><b>F5 - CPF do cliente</b></p>
+            <p><b>F6 - Finalizar</b></p>
+        </div>
+        <div class="total"><h1 class="txt_tot">TOTAL : <input type="text" class="txt_nu" maxlength="08" oninput="this.value = this.value.replace(/\D/g, '');" disabled> R$</h1></div>
+    </div>
+</body>
+</html>

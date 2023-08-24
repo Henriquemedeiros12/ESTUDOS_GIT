@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'qua';
+    src: url(../FONTS/Quartz.ttf);
+}
+
+body{
+width: 100%;
+height: 100vh;
+background-image: url(../IMG/wallpaperbetter\ \(1\).jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.pai{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.filho{
+    width: 330px;
+    height: 320px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 50px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+form {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+input{
+    color: #fff;
+    padding: 17px;
+    outline: none;
+    font-size: 30px;
+    font-family: 'qua';
+    border-radius: 25%;
+}
+
+.num{
+    width: 64px;
+    height: 67px;
+
+}
+
+.text{
+    width: 160px;
+    height: 26px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.text1{
+    width: 24px;
+    height: 36px;
+    border-radius: 50%;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#display{
+    cursor: auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+    text-align: justify;
+}
+
+.maincolor{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+}
+
+.maincolor:hover {
+    background: #00000029;
+}
+
+.num:hover {
+    background: #00000029;
+}
+
+.blue{
+    background-color: #ffa500;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+}
+
+.pin{
+    background-color: #ffa500;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+}
+
+.gre{
+    background-color: #ffa500;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+}
+
+.pur{
+    background-color: #ffa500;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+}
+
+.ora {
+    background-color: #ffa500;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 2px 2px 2px 2px;
+}

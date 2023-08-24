@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+.box{
+    outline: 5px solid red;
+}
+img{                   /*  X     Y  */
+    transform: skewX(25deg) skewY(10deg);
+}

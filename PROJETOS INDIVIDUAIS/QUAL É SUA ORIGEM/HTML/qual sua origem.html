@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+    <link rel="stylesheet" href="../CSS/nacionalidade.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <div class="pai">
+            <div class="fil">
+                <div class="cabeca">
+                        <h1>SISTEMA DE NACIONALIDADE</h1>
+                </div>
+                <div class="corpo">
+                    <label for="ORIGEM">PAÍS DE ORIGEM</label>
+                    <input type="text" class="alert-secondary" name="email" id="pais">
+                    <button type="button" class="btn btn-primary btn-sm" id="but" value="VERIFICAR" onclick="verificar()">VERIFICAR</button>
+                
+                </div>
+                <div id="res">
+                </div>
+            </div>
+        </div>
+    <script>
+        document.addEventListener("keypress", function(e){
+            if(e.key === 'Enter'){
+                var btn = document.querySelector('#but');
+                btn.click();
+            }
+        });
+        function verificar(){
+            let val = document.getElementById('pais').value
+            
+            if (val.trim() === "") {
+            alert('Digite o seu páis de origem');
+            document.getElementById("pais").focus();
+            return;
+            }
+
+            var or = document.getElementById('pais')
+            var tx = document.getElementById('res')
+            var res = (or.value)
+            tx.innerHTML = `sua origem é do(a) <strong>${res}</strong>`
+        if (res == 'Brasil' || res == 'brasil'){
+            tx.innerHTML += '<p>voce é <strong>Brasileiro!</strong></p>'
+        }else{
+            tx.innerHTML += '<p>voce é <strong>Estrangeiro! </strong></p>'
+        }
+        }
+    </script>
+</body>
+</html>

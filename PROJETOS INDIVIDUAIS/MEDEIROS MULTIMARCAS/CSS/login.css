@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'lex';
+    src: url(../FONNTS/LexendExa-SemiBold.ttf);
+}
+
+body{
+    background-image: url(../images/pexels-king-siberia-2277980.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+
+@keyframes move{
+    0%{
+        transform: translateX(90px);
+    }
+
+    50%{
+        background-position: left;
+    }
+
+    100%{
+        background-position: left;
+    }
+}
+
+
+.pai{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    animation: move 5s alternate;
+}
+
+.filho{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 380px;
+    height: 350px;
+    padding: 60px 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: 3px 0px 3px 40px;
+}
+
+.login > input {
+    width: 70%;
+    background: transparent;
+    border: solid;
+    border-color:rgba(255, 255, 255, 0.934);
+    outline: none;
+    border-end-end-radius: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 7px 5px 7px;
+    margin:37px 0px 5px 48px;
+    font-family: 'lex';
+    font-weight: 500;
+}
+
+.senha > input {
+    width: 70%;
+    background: transparent;
+    border: solid;
+    border-color:rgba(255, 255, 255, 0.934);
+    outline: none;
+    border-end-end-radius: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 7px 5px 7px;
+    margin: 11px 2px 5px 48px;
+    font-family: 'lex';  
+}
+
+button{
+    font-size: 17px;
+    font-family: 'lex';
+    border-radius: 5px;
+    margin: 30px 104px;
+    padding: 5px 50px;
+    cursor: pointer;
+    background: transparent;
+    border-color:rgba(255, 255, 255, 0.934);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+
+}
+
+span{
+    color: red;
+    font-family: 'lex';
+    font-size: 12px;
+    margin: 1px 18px 3px 50px;
+    padding: 0px;
+    display: none;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;
+}
+
+
+.cada{
+    text-align: center;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'lex';
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+img.s{
+    height: 20px;
+    width: 20px;
+    padding: 2px 2px;
+    margin: -43px 305px;
+    
+}
+img.e{
+    height: 20px;
+    width: 20px;
+    padding: 2px 2px;
+    margin: -70px 305px; 
+}
+
+h1{
+    text-align: center;
+    font-family: 'lex';
+
+}
+
+a{
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover{
+    color: #F29F05;
+    text-decoration: underline;
+    font-size: 17px;
+    transition-duration: 0.5s;
+}
+
+.logo:hover{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    transition-duration: none;
+    color: #F29F05;
+}
+
+.logo{
+    font-family: 'lex';
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0px 0px 0px 25px;
+}
+
+nav{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-family: 'lex';
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 8vh; 
+}
+
+.aqui{
+    font-size: 30px;
+    font-family: 'lex';
+    color: #fff;
+    text-shadow:  0 0 10px rgba(0, 0, 0, 5.2);
+}
+
+
+body{
+    background-image: url(../images/pexels-king-siberia-2277980.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    overflow: hidden;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin: 0px 0px 0px 360px;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}

@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'lex';
+    src: url(../FONNTS/LexendExa-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'cap';
+    src: url(../FONNTS/Caprasimo-Regular.ttf);
+}
+
+body{
+    background-image: url(../images/pexels-king-siberia-2277980.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin: 0px 0px 0px 360px;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+nav{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-family: 'lex';
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 8vh; 
+    width: 100%;
+}
+
+.titu{
+    font-family: 'lex';
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0px 0px 0px 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.titu:hover{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 22px;
+    transition-duration: none;
+    color: #F29F05;
+}
+
+.cabeca {
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover{
+    color: #F29F05;
+    text-decoration: underline;
+    font-size: 17px;
+    transition-duration: 0.5s;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    font-family: 'lex';
+    color: #ffffff;
+    font-size: 15px;
+    text-align: justify;
+    padding: 0px 0px 0px 1px;
+}
+
+.menu li:hover{
+    color: #F29F05;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.menu li a {
+    display: block;
+    padding: 1px 0px 3px 0px;
+    margin: 1px 1px 1px 1px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'lex';
+    font-size: 15px;
+}
+
+.menu li a:hover{
+    color: #F29F05;
+}
+
+.menu .submenu1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.menu li:hover .submenu1 {
+    display: block;
+    padding: 0px 1px 1px 1px;
+}
+
+ul .submenu1{
+    height: 13vh;
+    width: 16vw;
+    margin: 0px 0px 0px 7px;
+    padding: 1px 1px 1px 1px;
+    position: absolute;
+    z-index: 2;
+}
+
+.menu .submenu2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.menu li:hover .submenu2 {
+    display: block;
+    padding: 0px 1px 1px 1px;
+}
+
+ul .submenu2 {
+    height: 17vh;
+    width: 10vw;
+    margin: 0px 0px 0px 7px;
+    position: absolute;
+    z-index: 2;
+}
+
+.menu .submenu3 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.menu li:hover .submenu3 {
+    display: block;
+    padding: 0px 1px 1px 1px;
+}
+
+ul .submenu3 {
+    height: 13vh;
+    width: 10vw;
+    margin: 0px 0px 0px 7px;
+    position: absolute;
+    z-index: 2;
+}
+
+.menu .submenu4 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    backdrop-filter: blur(30px);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.menu li:hover .submenu4 {
+    display: block;
+    padding: 0px 1px 1px 1px;
+}
+
+ul .submenu4 {
+    height: 9vh;
+    width: 13vw;
+    margin: 0px 0px 0px 7px;
+    position: absolute;
+    z-index: 2;
+}
+
+.prin{
+    color: #ffffff;
+    width: 10vw;
+    height: 5vh;
+    font-size: 15px;
+    margin: 0px 5px -5px 1px;
+    padding: 5px 5px 0px 5px;
+}
+
+.prin:hover{
+    color: #F29F05;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.op{
+    text-align: justify;
+    font-size: 10px;
+}
+
+.op:hover{
+    color: #F29F05;
+    font-size: 15px;
+    text-align: start;
+}
+
+.menu .submenu1 li {
+    display: block;
+}
+
+p {
+    height: 12vh;
+    width: 23vw;
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff;
+    font-family: 'lex';
+    font-size: 14px;
+    padding: 0px;
+    margin: -79px 0px 0px 0px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.column {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+
+.row {
+    margin:40px 30px 0px 30px; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.elementoPesquisavel {
+   
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 100px;
+    margin: 30px 1px 55px 55px;
+    height: 60vh;
+    width: 23vw;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background: transparent;
+}
+
+img {
+    height: 40vh;
+    width: 23vw;
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.comprar-agora {
+    font-family: 'lex';
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 2px 2px;
+    cursor: pointer;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-shadow:  0 0 10px rgba(0, 0, 0, 5.2);
+}
+  
+.comprar-agora:hover {
+    background-color: #F29F05;
+    transition-duration: 0.5s;
+}
+
+h1{
+    font-family: 'lex';
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 30px 0px 0px 25px; 
+    color: #ffffff;
+}
+
+hr{
+    color: rgba(255, 255, 255, 0.2);;
+}
+
+.linha {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-shadow:  0 0 10px rgba(0, 0, 0, 5.2);
+}
+
+button > a {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+button > a:hover {
+    color: #ffffff;
+    background: #F29F05;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+h6{
+    font-size: 25px;
+    font-family: 'lex';
+    margin: 6px 0px;
+}
+
+footer {
+    background: transparent;
+    backdrop-filter: blur(3px);
+    padding: 0px;
+    text-align: center;
+}
+  
+.footer-container {
+    background: transparent;
+    backdrop-filter: blur(3px);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.colaboradores p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 2px 2px;
+    margin: 25px 20px;
+    height: 12vh;
+    width: 53vw;
+}
+  
+.logo {
+    width: 160px;
+    height: 75px;
+    margin-right: 50px;
+}
+
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#inputPesquisa {
+    padding: 0px 7px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-family: 'lex';
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    height: 5vh; 
+    width: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+.pes {
+    width: 35px;
+    height: 31px;
+    background: transparent;
+    margin: 2px 2px 2px 5px;
+    
+}
+
+.pes:hover {
+    transform: none;
+    cursor: auto;
+}
+
+
